@@ -7,6 +7,12 @@ pipeline {
       }
     }
     stage ("test") {
+      // you can specify condition to satisfy before the steps are executed
+      when {
+        expression {
+          BRANCH_NAME =='jenkins-addition' || BRANCH_NAME =='main'
+        }
+      }
       steps {
         echo 'testing application.....'
       }
