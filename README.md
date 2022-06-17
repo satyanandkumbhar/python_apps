@@ -13,5 +13,5 @@ source env/bin/activate
 
 ## De-activating virtual env - mac OS
 ```
-source deactivate
+deactivate
 ```
