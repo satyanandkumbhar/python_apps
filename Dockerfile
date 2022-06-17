@@ -6,6 +6,6 @@ COPY requirements.txt .
 
 RUN pip3 install -r requirements.txt
 
-COPY ./app ./app
+COPY ./flask_01 ./flask_01
 
-CMD ["python", "./app/main.py"]
+CMD ["python", "./flask_01/app.py"]
